@@ -7,6 +7,12 @@
     "standard-version": "^4.0.0"
   },
   "dependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "config": "^1.25.1",
     "mongodb": "^2.2.24",
     "mongoose": "^4.9.0",
     "react": "^15.4.2",
@@ -14,6 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "server-start": "DEBUG=* node_modules/.bin/babel-node src/server/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
